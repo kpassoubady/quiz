@@ -14,3 +14,5 @@ http://localhost:4200
 Demo version can be seen:
 https://quiz.kavinschool.com/
 
+Based on:
+https://github.com/softgandhi/ng2-quiz
