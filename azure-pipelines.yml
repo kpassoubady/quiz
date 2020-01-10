@@ -21,19 +21,13 @@ steps:
     ng build --prod --build-optimizer
   displayName: 'npm install and build'
 
+
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: 'dist'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-    targetPath: 'dist'
 
-- task: PublishPipelineArtifact@1
-  inputs:
-    #targetPath: '$(Pipeline.Workspace)'
-    artifact: 'quiz'
-    publishLocation: 'pipeline'
-    targetPath: 'src/angular7/dist'
 
 - task: ArchiveFiles@2
   inputs:
@@ -42,3 +36,6 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+
+
+    
