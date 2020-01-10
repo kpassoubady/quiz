@@ -16,7 +16,9 @@
     "generate-contributors": "all-contributors generate",
     "pro-test": "protractor e2e/config/config.ts",
     "webdriver-update": "webdriver-manager update",
-    "webdriver-start": "webdriver-manager start"
+    "webdriver-start": "webdriver-manager start",
+    "prod-build-dev": "ng build --prod --build-optimizer",
+    "prod-build-staging": "ng build --prod --configuration=staging --build-optimizer"
   },
   "private": true,
   "dependencies": {
