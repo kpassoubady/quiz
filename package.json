@@ -61,7 +61,7 @@
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "minimist": ">=0.2.1",
+    "minimist": ">=1.2.6",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.1.1",
     "source-map-explorer": "^1.6.0",
